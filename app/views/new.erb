@@ -1,6 +1,12 @@
 <form action="/tasks" method="post">
-  <p>Enter a new task:</p>
-  <input type="text" name='task[title]'/><br/>
-  <textarea name="task[description]"></textarea><br/>
-  <input type='submit'/>
+  <p class="enter">Enter a new task:</p>
+  <input type="text" name="task[title]" class="form-control" placeholder="Text input"/><br/>
+  <textarea name="task[description]" class="form-control" rows="3" placeholder="Description"></textarea><br/>
+  <input class="btn btn-default" type='submit' value="Submit"/>
 </form>
+
+<style>
+  .enter {
+    padding-top: 20px;
+  }
+</style>
